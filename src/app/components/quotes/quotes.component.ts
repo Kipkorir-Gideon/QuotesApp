@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Quotes } from '../../models/quotes';
 
 @Component({
   selector: 'app-quotes',
