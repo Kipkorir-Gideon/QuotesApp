@@ -8,6 +8,13 @@ import { Quotes } from '../../models/quotes';
 })
 export class QuotesComponent implements OnInit {
 
+  quotes:Quotes[] = [
+    new Quotes('Philosophy', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Anonymous', new Date(2021,10,8), 0, 0, 'Ngetich'),
+    new Quotes('Philosophy', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Anonymous', new Date(2021,10,8), 0, 0, 'Ngetich'),
+    new Quotes('Philosophy', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Anonymous', new Date(2021,10,8), 0, 0, 'Ngetich'),
+    new Quotes('Philosophy', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Anonymous', new Date(2021,10,8), 0, 0, 'Ngetich')
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
