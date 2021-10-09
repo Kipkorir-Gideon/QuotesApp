@@ -12,7 +12,6 @@ export class QuotesFormComponent implements OnInit {
 
   addQuote() {
     this.add.emit(this.newQuote);
-    this.newQuote = new Quotes('', '', '', new Date(), 0, 0, '');
   }
   constructor() { }
 
