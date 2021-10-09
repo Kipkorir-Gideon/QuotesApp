@@ -15,10 +15,10 @@ export class QuotesDetailComponent implements OnInit {
   deleteQuote(read:boolean){
     this.isRead.emit(read);
   }
-  upvote(){
+  upVote(){
     this.votes.upvote+=1;
   }
-  downvote(){
+  downVote(){
     this.votes.downvote+=1;
   }
 
