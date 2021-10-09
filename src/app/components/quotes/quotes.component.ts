@@ -15,6 +15,17 @@ export class QuotesComponent implements OnInit {
     new Quotes('Philosophy', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'Anonymous', new Date(2021,10,8), 0, 0, 'Ngetich')
   ]
 
+  removeQuote(isRead: any, index:number) {
+    if(isRead) {
+      let toRemove = confirm(`Are you sure you want to remove ${this.quotes[index].title}?`)
+      if(toRemove) {
+        this.quotes.splice(index,1)
+      }
+    }
+  }
+
+  
+
   constructor() { }
 
   ngOnInit(): void {
