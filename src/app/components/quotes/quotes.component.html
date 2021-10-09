@@ -6,11 +6,11 @@
             <div *ngFor = "let quote of quotes; let i = index">
                 <h4>{{quote.title}}</h4>
                 <p>{{quote.quoteInfo}}</p>
+                <app-quotes-detail *ngIf='quote' bind-votes='quote' (isRead)='removeQuote($event,i)'></app-quotes-detail>
             </div>
-            
         </div>
         <div class="col-md-6">
-            <app-quotes-form (add)="addQuote($event)"></app-quotes-form>
+            <app-quotes-form (add)="addNewQuote($event)"></app-quotes-form>
         </div>
     </div>
 </div>

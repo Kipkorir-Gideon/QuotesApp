@@ -1,1 +1,6 @@
-<p>quotes-detail works!</p>
+<p>Author: {{ votes.author }}</p>
+<p>Posted by: {{ votes.postedBy }}</p>
+<button (click)='upVote()' class="btn btn-success m-3">Up Vote {{ votes.upvote }}</button>
+<button (click)='downVote()' class="btn btn-danger m-3">Down Vote {{ votes.downvote }}</button>
+<br>
+<button class="btn btn-outline-danger" (click)='deleteQuote(true)'>Delete</button>
