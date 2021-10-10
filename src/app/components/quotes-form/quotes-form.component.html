@@ -5,31 +5,31 @@
         <div class="form-group mt-2">
             <label for="name">Your Name</label>
             <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.postedBy" name="postedBy" #postedBy="ngModel" required>
-            <div [hidden]="postedBy.valid || postedBy.pristine" class = "alert alert-danger">
+            <div *ngIf="postedBy.valid && postedBy.pristine" class = "alert alert-danger">
                 <p>Name is required</p>
             </div>
         </div>
         <div class="form-group mt-2">
             <label for="title">Quote Title</label>
             <input type="text" class="form-control" id="title" [(ngModel)]="newQuote.title" name="title" #title = "ngModel" required>
-            <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
+            <div *ngIf="title.valid && title.pristine" class="alert alert-danger">
                 <p>Title is required</p>
             </div>
         </div>
         <div class="form-group mt-2">
             <label for="quote">Quote</label>
             <textarea class="form-control" type="text" id="quoteInfo" rows="4" [(ngModel)]="newQuote.quoteInfo" name="quoteInfo" #quoteInfo = "ngModel" required></textarea>
-            <div [hidden]="quoteInfo.valid || quoteInfo.pristine" class="alert alert-danger">
+            <div *ngIf="quoteInfo.valid && quoteInfo.pristine" class="alert alert-danger">
                 <p>Quote is required</p>
             </div>
         </div>
         <div class="form-group mt-2">
             <label for="author">Author of Quote</label>
             <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author = "ngModel" required>
-            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+            <div *ngIf="author.valid && author.pristine" class="alert alert-danger">
                 <p>Author is required</p>
             </div>
         </div>   
-        <button type="submit" class="btn btn-success mt-2">Post Quote</button>
+        <button type="submit" class="btn btn-success mt-2" [disabled]="!newQuote.postedBy || !newQuote.title || !newQuote.quoteInfo || !newQuote.author">Post Quote</button>
     </form>
 </div>
