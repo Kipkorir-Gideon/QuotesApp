@@ -1,6 +1,6 @@
 <p>Author: {{ votes.author }}</p>
 <p>Posted by: {{ votes.postedBy }}</p>
-<p>Posted {{ votes.datePosted | dayPosted }}</p>
+<p>Posted {{ votes.datePosted | dayPosted }} on {{ votes.datePosted | date }}</p>
 <button (click)='upVote()' class="btn btn-success m-3">Up Vote {{ votes.upvote }}</button>
 <button (click)='downVote()' class="btn btn-danger m-3">Down Vote {{ votes.downvote }}</button>
 <br>
