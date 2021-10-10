@@ -47,7 +47,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 -Typescript<br/>
 -Angular<br/>
 -HTML<br/>
--BOOTSTRAP<br/>
+-Bootstrap<br/>
 -CSS
 
 ## Contact
