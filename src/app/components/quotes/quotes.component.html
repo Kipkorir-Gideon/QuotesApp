@@ -3,7 +3,7 @@
 
     <div class="row">
         <div class="col-md-6">
-            <div *ngFor = "let quote of quotes; let i = index">
+            <div class="quotes" *ngFor = "let quote of quotes; let i = index">
                 <h4>{{quote.title}}</h4>
                 <p  *ngIf="highestVotes()!==quote.upvote || quote.upvote===0">{{quote.quoteInfo}}</p>
                 <p appHighlight *ngIf="highestVotes()===quote.upvote && quote.upvote>0">{{quote.quoteInfo}}</p>
@@ -11,7 +11,9 @@
             </div>
         </div>
         <div class="col-md-6">
-            <app-quotes-form (add)="addNewQuote($event)"></app-quotes-form>
+            <div class="quoteForm">
+                <app-quotes-form (add)="addNewQuote($event)"></app-quotes-form>
+            </div>
         </div>
     </div>
 </div>

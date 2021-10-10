@@ -1,7 +1,7 @@
-<p>Author: {{ votes.author }}</p>
-<p>Posted by: {{ votes.postedBy }}</p>
+<p><strong>Author</strong>: {{ votes.author }}</p>
+<p><strong>Posted by</strong>: {{ votes.postedBy }}</p>
 <p>Posted {{ votes.datePosted | dayPosted }} on {{ votes.datePosted | date }}</p>
 <button (click)='upVote()' class="btn btn-success m-3">Up Vote {{ votes.upvote }}</button>
 <button (click)='downVote()' class="btn btn-danger m-3">Down Vote {{ votes.downvote }}</button>
 <br>
-<button class="btn btn-outline-danger" (click)='deleteQuote(true)'>Delete Quote</button>
+<button class="btn btn-outline-danger" id="delete" (click)='deleteQuote(true)'>Delete Quote</button>
