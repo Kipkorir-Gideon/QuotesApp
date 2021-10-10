@@ -2,6 +2,22 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
+##Author
+Ngetich Gideon
+
+## Description
+This is a online site for reading and posting quotes. One can read quotes on the site, up vote or down vote on a quote and as well can delete a quote. The site also has a form where a user can enter the required details and post their quotes to the site.
+
+## Prerequisites
+You need to have git installed<br />
+You can install it with the following command in your terminal
+`$ sudo apt install git-all`
+
+## Setup Insrtuction
+To access this project on your local files, you can clone it using these steps
+1. Open your terminal
+1. Use this command to clone `$ git clone https://github.com/Kipkorir-Gideon/ItsPizza.git`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
