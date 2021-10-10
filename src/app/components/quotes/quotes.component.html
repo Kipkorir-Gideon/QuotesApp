@@ -5,7 +5,8 @@
         <div class="col-md-6">
             <div *ngFor = "let quote of quotes; let i = index">
                 <h4>{{quote.title}}</h4>
-                <p>{{quote.quoteInfo}}</p>
+                <p  *ngIf="highestVotes()!==quote.upvote || quote.upvote===0">{{quote.quoteInfo}}</p>
+                <p appHighlight *ngIf="highestVotes()===quote.upvote && quote.upvote>0">{{quote.quoteInfo}}</p>
                 <app-quotes-detail *ngIf='quote' bind-votes='quote' (isRead)='removeQuote($event,i)'></app-quotes-detail>
             </div>
         </div>
