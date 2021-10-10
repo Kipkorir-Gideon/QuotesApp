@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { QuotesComponent } from './components/quotes/quotes.component';
 import { QuotesDetailComponent } from './components/quotes-detail/quotes-detail.component';
 import { QuotesFormComponent } from './components/quotes-form/quotes-form.component';
+import { DaysPipe } from './pipes/days.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuotesComponent,
     QuotesDetailComponent,
-    QuotesFormComponent
+    QuotesFormComponent,
+    DaysPipe
   ],
   imports: [
     BrowserModule,
