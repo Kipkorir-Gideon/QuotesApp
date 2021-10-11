@@ -16,7 +16,7 @@ You can install it with the following command in your terminal
 ## Setup Insrtuction
 To access this project on your local files, you can clone it using these steps
 1. Open your terminal
-1. Use this command to clone `$ git clone https://github.com/Kipkorir-Gideon/ItsPizza.git`
+1. Use this command to clone `$ git clone https://github.com/Kipkorir-Gideon/QuotesApp.git`
 
 ## Development server
 
